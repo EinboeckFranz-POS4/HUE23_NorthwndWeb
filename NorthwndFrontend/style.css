@@ -1,0 +1,27 @@
+body {
+    background-color: lightblue;
+    font-family: "Arial Rounded MT Bold", serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    border-radius: 5px;
+    padding: 5px;
+    width: 33%;
+    margin: 10px;
+    background-color: darkgray;
+}
