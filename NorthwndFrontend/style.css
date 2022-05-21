@@ -11,6 +11,7 @@ h1 {
 h2 {
     text-align: center;
     font-weight: normal;
+    background-color: darkgray;
 }
 
 #columns {
@@ -23,5 +24,64 @@ h2 {
     padding: 5px;
     width: 33%;
     margin: 10px;
-    background-color: darkgray;
+    background-color: lightgray;
+}
+
+p {
+    padding-left: 3%;
+}
+
+.hovering {
+    background-color: orange;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+}
+
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.total {
+    text-align: right;
+}
+
+.redButton {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.greenButton {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: forestgreen;
+}
+
+#addOrderDetail {
+    background-color: lightblue;
+    padding: 2%;
+}
+
+#addOrderDetailProduct {
+    width: 13rem;
+}
+
+#addOrderDetailButton {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: forestgreen;
 }

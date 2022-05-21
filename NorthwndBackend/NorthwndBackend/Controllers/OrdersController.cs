@@ -8,9 +8,9 @@ public class OrdersController
     public OrdersController(NORTHWNDContext db) => _db = db;
 
     [HttpGet]
-    public List<OrderDto> GetOrdersOfCustomer(string customerId)
+    public IEnumerable<OrderDto> GetOrdersOfCustomer(string customerId)
     {
-        Console.WriteLine($"{DateTime.Now:dd.MM.yyyy hh:mm:ss} GetOrdersOfCustomer {customerId}");
+        Console.WriteLine($"{DateTime.Now:dd.MM.yyyy HH:mm:ss} GetOrdersOfCustomer {customerId}");
         return _db.Orders.Where(x => x.CustomerId == customerId)
             .Select(x => new 
                 {
@@ -21,7 +21,6 @@ public class OrdersController
                     x.Freight,
                     x.ShipName
                 }
-            ).Select(x => new OrderDto().CopyPropertiesFrom(x))
-            .ToList();
+            ).Select(x => new OrderDto().CopyPropertiesFrom(x));
     }
 }

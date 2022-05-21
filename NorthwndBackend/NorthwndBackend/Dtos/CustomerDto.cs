@@ -2,6 +2,6 @@
 
 public class CustomerDto
 {
-    public string CustomerId { get; set; }
-    public string CompanyName { get; set; }
+    public string? CustomerId { get; set; }
+    public string? CompanyName { get; set; }
 }
